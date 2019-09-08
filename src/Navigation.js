@@ -15,9 +15,13 @@ const StyledNavLink = styled(NavLink)`
     display: block;
     width: 100%;
     height: 40px;
+    background-color: white;
+    margin: 10px 0;
     float: left;
-    color: white;
+    color: black;
     text-decoration: none;
+    text-align: center;
+    line-height: 40px;
 `;
 
 const Navigation = () => (

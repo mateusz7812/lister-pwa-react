@@ -31,7 +31,7 @@ const ListPage = ({match}) =>{
                                 <List scale="15" key={list.toString()} item={list}/>
                             </OneLiner>
                             <OneLiner>
-                                <AccountDetails scale="8" account={{"nick": list["account"]}}/>
+                                <AccountDetails  href={'/accounts/' + list["account_id"]} scale="8" account={{"nick": list["account"]}}/>
                             </OneLiner>
                         </div>
                 : <LoadingComponent/>

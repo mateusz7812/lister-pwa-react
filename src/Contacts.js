@@ -1,7 +1,20 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components';
-import Contact from "./Contact";
 import LoadingComponent from "./LoadingComponent";
+import {Link} from "react-router-dom";
+
+const ContactLink = styled(Link)`
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    margin: 10px 0;
+    float: left;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+`;
 
 const Wrapper = styled.div`
     position: relative;
@@ -48,7 +61,7 @@ const Contacts = () => {
         <Wrapper>
             {
                 contactsAccounts.length ? contactsAccounts.map((item) => (
-                    <Contact account={item} />
+                    <ContactLink to={`/accounts/` +  item.id} >{item.nick}</ContactLink>
                 )) : <LoadingComponent/>
             }
         </Wrapper>

@@ -2,9 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 
 
-const  AccountWrapper = styled.div(
+const  AccountWrapper = styled.a(
     props => ({
         display: "inline-block",
+        textDecoration: "none",
+        color: "black",
         width: 40* parseInt(props.scale) + "px",
         backgroundColor: "lightgray",
         position: "relative",
@@ -38,7 +40,7 @@ const AccountImage = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 50%;
 `;
 
@@ -53,9 +55,9 @@ const AccountTextWrapper = styled.div`
 
 
 
-const AccountDetails = ({account, scale}) =>{
+const AccountDetails = ({href, account, scale, className}) =>{
     return (
-        <AccountWrapper scale={scale}>
+        <AccountWrapper href={href} scale={scale} className={className}>
             <AccountImageWrapper>
                 <AccountImageSquare>
                     <AccountImage/>

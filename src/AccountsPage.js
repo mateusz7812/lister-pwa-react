@@ -1,34 +1,34 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import {MainChildWrapper} from "./App";
 import LoadingComponent from "./LoadingComponent";
 import AccountDetails from "./AccountDetails";
+import styled from 'styled-components';
+
+const StyledAccountDetails = styled(AccountDetails)`
+    margin: 10px 20px;
+`;
 
 const  AccountsPage = () => {
 
     const [accounts, setAccounts] = useState([]);
 
-    function updateAccounts() {
+    const updateAccounts = () => {
         fetch("http://localhost:8888/api/accounts")
             .then(res => res.json())
-            .then(json => {
-                alert(JSON.stringify(json));
-                return json
-            })
-            .then(json => json["items"])
             .then(items => setAccounts(items))
-    }
+    };
 
     useEffect(() =>{
         updateAccounts();
         setInterval(()=> updateAccounts(), 30000)
-    });
+    }, []);
 
 
     return (
         <MainChildWrapper>
             {
                 accounts.length ? accounts.map((item) => (
-                    <AccountDetails scale="8" account={item}/>
+                    <StyledAccountDetails href={'/accounts/' + item.id} scale="8" account={item}/>
                 )) : <LoadingComponent />
             }
         </MainChildWrapper>

@@ -9,7 +9,6 @@ const ListsPage = () => {
     const updateLists = () => {
         fetch("http://localhost:8888/api/lists")
             .then(res => res.json())
-            .then(json => json["items"])
             .then(items => setLists(items))
     };
 
