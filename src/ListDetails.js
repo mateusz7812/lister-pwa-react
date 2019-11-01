@@ -36,7 +36,7 @@ const Date = styled.p`
     height: 6%;
 `;
 
-const List = ({item, history, scale}) => {
+const ListDetails = ({item, history, scale}) => {
     const routeChange = () => {
         let path = `/lists/` + item.id;
         history.push(path);
@@ -53,4 +53,4 @@ const List = ({item, history, scale}) => {
 };
 
 export {StyledList};
-export default withRouter(List);
+export default withRouter(ListDetails);

@@ -1,4 +1,4 @@
-import List from "./List";
+import List from "./ListDetails";
 import React, { useState , useEffect} from "react";
 import {MainChildWrapper} from './App.js' ;
 import LoadingComponent from "./LoadingComponent";

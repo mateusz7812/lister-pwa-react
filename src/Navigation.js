@@ -11,6 +11,11 @@ const Nav = styled.nav`
     background-color: gray;
 `;
 
+const Logo = styled.img`
+    width: 70%;
+    margin: 0 15%;
+`;
+
 const StyledNavLink = styled(NavLink)`
     display: block;
     width: 100%;
@@ -26,8 +31,9 @@ const StyledNavLink = styled(NavLink)`
 
 const Navigation = () => (
     <Nav>
-                <StyledNavLink exact activeClassName="current" to='/lists'>Lists</StyledNavLink>
-                <StyledNavLink exact activeClassName="current" to='/accounts'>Accounts</StyledNavLink>
+        <Logo src="/icon.png"/>
+        <StyledNavLink exact activeClassName="current" to='/lists'>Lists</StyledNavLink>
+        <StyledNavLink exact activeClassName="current" to='/accounts'>Accounts</StyledNavLink>
     </Nav>
 );
 

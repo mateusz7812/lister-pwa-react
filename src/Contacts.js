@@ -6,14 +6,14 @@ import {Link} from "react-router-dom";
 const ContactLink = styled(Link)`
     display: block;
     width: 100%;
-    height: 40px;
+    height: 30px;
     background-color: white;
-    margin: 10px 0;
+    margin: 8px 0;
     float: left;
     color: black;
     text-decoration: none;
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
 `;
 
 const Wrapper = styled.div`

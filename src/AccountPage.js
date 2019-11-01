@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {MainChildWrapper} from './App.js' ;
-import List from "./List";
+import List from "./ListDetails";
 import LoadingComponent from "./LoadingComponent";
 import styled from 'styled-components';
 import AccountDetails from "./AccountDetails";
