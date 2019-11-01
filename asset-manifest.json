@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lister-pwa-react/static/css/main.8347de09.chunk.css",
+    "main.js": "/lister-pwa-react/static/js/main.1b7324ab.chunk.js",
+    "main.js.map": "/lister-pwa-react/static/js/main.1b7324ab.chunk.js.map",
+    "runtime~main.js": "/lister-pwa-react/static/js/runtime~main.a3447aff.js",
+    "runtime~main.js.map": "/lister-pwa-react/static/js/runtime~main.a3447aff.js.map",
+    "static/js/2.101a9016.chunk.js": "/lister-pwa-react/static/js/2.101a9016.chunk.js",
+    "static/js/2.101a9016.chunk.js.map": "/lister-pwa-react/static/js/2.101a9016.chunk.js.map",
+    "index.html": "/lister-pwa-react/index.html",
+    "precache-manifest.f30ee4ca6f7d2beb6fcf34565612b517.js": "/lister-pwa-react/precache-manifest.f30ee4ca6f7d2beb6fcf34565612b517.js",
+    "service-worker.js": "/lister-pwa-react/service-worker.js",
+    "static/css/main.8347de09.chunk.css.map": "/lister-pwa-react/static/css/main.8347de09.chunk.css.map"
+  }
+}
